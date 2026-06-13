@@ -68,7 +68,7 @@ MODEL_OK=false
 if [[ "$REBUILD_MODELS" == "true" ]] || [[ "$RETRIEVER_OK" == "false" ]] || [[ "$MODEL_OK" == "false" ]]; then
   echo "   Building ML artifacts (this runs inside a temp container)..."
   docker compose run --rm --no-deps cae-api bash -c \
-    "python knowledge_base/build_retriever.py && python tools/surrogate_model.py"
+    "python build_all.py"
   echo "   Artifacts built."
 else
   echo "   Artifacts OK (use --rebuild-models to force rebuild)"

@@ -29,6 +29,7 @@ COPY --from=builder /usr/local/lib/python3.12 /usr/local/lib/python3.12
 COPY --from=builder /usr/local/bin /usr/local/bin
 
 # Copy application code
+COPY build_all.py build_all.py
 COPY agents/     agents/
 COPY api/        api/
 COPY data/       data/

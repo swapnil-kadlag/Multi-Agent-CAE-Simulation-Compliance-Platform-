@@ -2,6 +2,9 @@
 .env
 *.env
 
+# Generated files
+*.pdf
+
 # Python
 __pycache__/
 *.pyc

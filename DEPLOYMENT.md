@@ -15,9 +15,11 @@
 
 | Endpoint | URL |
 |---|---|
-| Health check | http://13.60.43.34/health |
-| Swagger UI | http://13.60.43.34/docs |
-| MCP schema | http://13.60.43.34/mcp |
+| Health check | https://cae-platform.duckdns.org/health |
+| Swagger UI | https://cae-platform.duckdns.org/docs |
+| MCP SSE | https://cae-platform.duckdns.org/mcp/sse |
+
+> HTTP (port 80) auto-redirects to HTTPS. SSL certificate issued by Let's Encrypt, expires 2026-09-11, auto-renewed via certbot systemd timer.
 
 **API Key:** stored in `/opt/cae-platform/.env` as `CAE_API_KEY`  
 **SSH key:** `cae-key.pem` — keep this file safe, do not commit it
@@ -91,10 +93,7 @@ app dir: /opt/cae-platform
 
 ## Optional Next Steps
 
-1. **SSL certificate** (requires a domain name with DNS pointing to `13.60.43.34`):
-   ```bash
-   bash deploy/nginx_setup.sh your-domain.com your@email.com
-   ```
+1. **SSL certificate** — ✅ Done. Domain: `cae-platform.duckdns.org`, cert expires 2026-09-11 (auto-renewed).
 
 2. **Real API keys** — edit `/opt/cae-platform/.env` and add:
    - `OPENAI_API_KEY` — for LLM-as-Judge evaluation mode

@@ -1,0 +1,35 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Pre-built model artifacts (large binaries — rebuild from source)
+data/retriever/faiss.index
+data/retriever/retriever_state.pkl
+data/surrogate_model.pkl
+
+# Eval output
+eval/eval_results.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Docker
+*.tar
+
+# W&B local cache
+wandb/

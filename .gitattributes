@@ -1,0 +1,12 @@
+# Ensure shell scripts always use LF on all platforms (CRLF breaks bash on EC2)
+*.sh        text eol=lf
+
+# Python and config files — auto line endings
+*.py        text
+*.yml       text
+*.yaml      text
+*.json      text
+*.txt       text
+*.md        text
+*.conf      text
+Dockerfile  text eol=lf

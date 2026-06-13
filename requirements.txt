@@ -1,0 +1,37 @@
+# ── Core AI / LangChain stack ──────────────────────────────────────────────
+langchain==0.3.25
+langchain-openai==0.2.14
+langchain-community==0.3.24
+langgraph==0.2.62
+langsmith==0.3.45
+
+# ── Vector stores & retrieval ──────────────────────────────────────────────
+faiss-cpu==1.9.0
+rank-bm25==0.2.2
+chromadb==0.5.23
+
+# ── FastAPI + MCP ──────────────────────────────────────────────────────────
+# fastapi-mcp mounts a full MCP SSE server at /mcp/sse for remote agent access
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+fastapi-mcp==0.3.3
+pydantic==2.10.6
+
+# ── ML / Data science ─────────────────────────────────────────────────────
+scikit-learn==1.6.1
+numpy==1.26.4
+pandas==2.2.3
+
+# ── Experiment tracking ───────────────────────────────────────────────────
+# W&B logs RMSE, R², CV scores, and feature importance during surrogate training
+wandb==0.19.1
+
+# ── Evaluation ────────────────────────────────────────────────────────────
+pytest==8.3.4
+ragas==0.2.14
+datasets==3.2.0     # required by ragas for Dataset.from_dict()
+
+# ── Utilities ─────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+tiktoken==0.9.0
+PyPDF2==3.0.1

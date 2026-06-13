@@ -1,0 +1,352 @@
+[
+  {
+    "id": "qa_001",
+    "question": "What is the root cause of blade pass frequency noise at 340 Hz in a blower?",
+    "expected_topics": [
+      "BPF",
+      "blade pass frequency",
+      "acoustic cavity",
+      "resonance"
+    ],
+    "reference_case": "AERO_001",
+    "expected_answer_contains": [
+      "blade pass frequency",
+      "acoustic cavity resonance",
+      "scroll housing"
+    ],
+    "category": "root_cause"
+  },
+  {
+    "id": "qa_002",
+    "question": "My electric motor at 3000 RPM shows 82 dB noise at 847 Hz. What is causing this and how do I fix it?",
+    "expected_topics": [
+      "BPF",
+      "stator resonance",
+      "housing",
+      "damping"
+    ],
+    "reference_case": "eNVH_001",
+    "expected_answer_contains": [
+      "blade pass frequency",
+      "stator",
+      "housing",
+      "damping"
+    ],
+    "category": "diagnosis_and_fix"
+  },
+  {
+    "id": "qa_003",
+    "question": "What does ISO 362-1 specify for drive-by noise limits of passenger cars?",
+    "expected_topics": [
+      "ISO 362",
+      "72 dB",
+      "drive-by",
+      "type approval"
+    ],
+    "reference_case": "COMP_001",
+    "expected_answer_contains": [
+      "72 dB",
+      "ISO 362",
+      "passenger",
+      "50 km/h"
+    ],
+    "category": "compliance"
+  },
+  {
+    "id": "qa_004",
+    "question": "A bearing shows BPFI signature at 2400 Hz with severity 5. What action should I take?",
+    "expected_topics": [
+      "bearing",
+      "inner race",
+      "BPFI",
+      "replacement",
+      "urgent"
+    ],
+    "reference_case": "BEAR_001",
+    "expected_answer_contains": [
+      "replace",
+      "50 hours",
+      "inner race",
+      "alignment"
+    ],
+    "category": "urgent_action"
+  },
+  {
+    "id": "qa_005",
+    "question": "How do I reduce cogging torque noise in a PMSM motor at low speeds?",
+    "expected_topics": [
+      "cogging",
+      "skewing",
+      "fractional slot",
+      "rotor"
+    ],
+    "reference_case": "eNVH_005",
+    "expected_answer_contains": [
+      "skew",
+      "cogging",
+      "fractional"
+    ],
+    "category": "design_fix"
+  },
+  {
+    "id": "qa_006",
+    "question": "What is gear mesh frequency and why does it cause noise in a gearbox?",
+    "expected_topics": [
+      "GMF",
+      "gear mesh",
+      "torsional",
+      "teeth"
+    ],
+    "reference_case": "GEAR_001",
+    "expected_answer_contains": [
+      "gear mesh frequency",
+      "teeth",
+      "RPM"
+    ],
+    "category": "root_cause"
+  },
+  {
+    "id": "qa_007",
+    "question": "Dashboard rattling noise at 145 Hz \u2014 what is BSR and how to fix it?",
+    "expected_topics": [
+      "BSR",
+      "buzz squeak rattle",
+      "foam",
+      "attachment"
+    ],
+    "reference_case": "STRUCT_003",
+    "expected_answer_contains": [
+      "buzz",
+      "squeak",
+      "rattle",
+      "foam tape"
+    ],
+    "category": "diagnosis_and_fix"
+  },
+  {
+    "id": "qa_008",
+    "question": "Engine mount dynamic stiffness has increased 3x from new. What does this mean for NVH?",
+    "expected_topics": [
+      "mount",
+      "stiffness",
+      "isolation",
+      "aging"
+    ],
+    "reference_case": "MOUNT_001",
+    "expected_answer_contains": [
+      "stiffness",
+      "isolation",
+      "hardening",
+      "replace"
+    ],
+    "category": "diagnosis_and_fix"
+  },
+  {
+    "id": "qa_009",
+    "question": "What is Maxwell stress tensor and how does it cause electromagnetic NVH?",
+    "expected_topics": [
+      "Maxwell stress",
+      "electromagnetic force",
+      "stator",
+      "radial force"
+    ],
+    "reference_case": "eNVH_002",
+    "expected_answer_contains": [
+      "Maxwell stress",
+      "electromagnetic",
+      "stator",
+      "radial"
+    ],
+    "category": "concept_explanation"
+  },
+  {
+    "id": "qa_010",
+    "question": "IEC 60704 standard \u2014 what is the noise limit for washing machine in spin cycle?",
+    "expected_topics": [
+      "IEC 60704",
+      "77 dB",
+      "spin",
+      "washing machine"
+    ],
+    "reference_case": "COMP_002",
+    "expected_answer_contains": [
+      "77 dB",
+      "IEC 60704",
+      "spin"
+    ],
+    "category": "compliance"
+  },
+  {
+    "id": "qa_011",
+    "question": "How do I calculate blade pass frequency for a 9-blade fan at 1500 RPM?",
+    "expected_topics": [
+      "BPF",
+      "blade count",
+      "RPM",
+      "calculation"
+    ],
+    "reference_case": "AERO_001",
+    "expected_answer_contains": [
+      "225 Hz",
+      "1500",
+      "9"
+    ],
+    "category": "calculation"
+  },
+  {
+    "id": "qa_012",
+    "question": "What is the difference between BPFI and BPFO in bearing diagnostics?",
+    "expected_topics": [
+      "BPFI",
+      "BPFO",
+      "inner race",
+      "outer race",
+      "defect"
+    ],
+    "reference_case": "BEAR_001",
+    "expected_answer_contains": [
+      "inner race",
+      "outer race",
+      "BPFI",
+      "BPFO"
+    ],
+    "category": "concept_explanation"
+  },
+  {
+    "id": "qa_013",
+    "question": "What structural modification eliminates sheet metal panel resonance at 120 Hz?",
+    "expected_topics": [
+      "panel resonance",
+      "damping patch",
+      "stiffening",
+      "bitumen"
+    ],
+    "reference_case": "STRUCT_001",
+    "expected_answer_contains": [
+      "damping",
+      "stiffening",
+      "resonance"
+    ],
+    "category": "design_fix"
+  },
+  {
+    "id": "qa_014",
+    "question": "PWM switching frequency affects high-frequency motor noise \u2014 explain this.",
+    "expected_topics": [
+      "PWM",
+      "switching frequency",
+      "harmonics",
+      "inverter"
+    ],
+    "reference_case": "eNVH_003",
+    "expected_answer_contains": [
+      "PWM",
+      "switching frequency",
+      "harmonic"
+    ],
+    "category": "concept_explanation"
+  },
+  {
+    "id": "qa_015",
+    "question": "A sensor reading shows dominant frequency 500 Hz, amplitude 78 dB, component electric_motor. Diagnose.",
+    "expected_topics": [
+      "electromagnetic whine",
+      "Maxwell stress",
+      "end-shield",
+      "500 Hz"
+    ],
+    "reference_case": "eNVH_002",
+    "expected_answer_contains": [
+      "electromagnetic",
+      "500",
+      "motor"
+    ],
+    "category": "sensor_diagnosis"
+  },
+  {
+    "id": "qa_016",
+    "question": "What is torque ripple and at what frequency does it occur in a 6-pole PMSM at 3000 RPM?",
+    "expected_topics": [
+      "torque ripple",
+      "6x electrical",
+      "PMSM",
+      "300 Hz"
+    ],
+    "reference_case": "eNVH_004",
+    "expected_answer_contains": [
+      "torque ripple",
+      "300 Hz",
+      "6"
+    ],
+    "category": "calculation"
+  },
+  {
+    "id": "qa_017",
+    "question": "How does rotor skewing reduce cogging torque in a permanent magnet motor?",
+    "expected_topics": [
+      "skewing",
+      "cogging",
+      "reluctance",
+      "slot pitch"
+    ],
+    "reference_case": "eNVH_005",
+    "expected_answer_contains": [
+      "skew",
+      "cogging",
+      "slot pitch",
+      "reluctance"
+    ],
+    "category": "design_fix"
+  },
+  {
+    "id": "qa_018",
+    "question": "Differential whining noise at highway speed \u2014 what is the diagnostic procedure?",
+    "expected_topics": [
+      "differential",
+      "GMF",
+      "contact pattern",
+      "shimming"
+    ],
+    "reference_case": "GEAR_002",
+    "expected_answer_contains": [
+      "contact pattern",
+      "backlash",
+      "shim"
+    ],
+    "category": "diagnosis_and_fix"
+  },
+  {
+    "id": "qa_019",
+    "question": "ISO 2631-1 \u2014 what does it evaluate and what are the comfort threshold values?",
+    "expected_topics": [
+      "ISO 2631",
+      "whole body vibration",
+      "comfort",
+      "acceleration"
+    ],
+    "reference_case": "STRUCT_002",
+    "expected_answer_contains": [
+      "ISO 2631",
+      "whole-body",
+      "vibration"
+    ],
+    "category": "compliance"
+  },
+  {
+    "id": "qa_020",
+    "question": "A fan has residual unbalance causing 1\u00d7 vibration at 25 Hz. What ISO standard applies and what is the correction?",
+    "expected_topics": [
+      "ISO 21940",
+      "unbalance",
+      "G2.5",
+      "balancing"
+    ],
+    "reference_case": "AERO_003",
+    "expected_answer_contains": [
+      "ISO 21940",
+      "balance",
+      "G2.5"
+    ],
+    "category": "compliance"
+  }
+]

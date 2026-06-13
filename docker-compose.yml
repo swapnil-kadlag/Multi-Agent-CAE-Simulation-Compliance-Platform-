@@ -1,0 +1,88 @@
+version: "3.9"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CAE NVH Platform — Docker Compose
+#
+# Local dev:       docker compose up
+# EC2 production:  bash deploy/deploy.sh
+#
+# After Nginx + SSL setup, MCP is reachable at:
+#   https://your-domain.com/mcp/sse
+#
+# Claude Desktop config:
+#   {
+#     "mcpServers": {
+#       "cae-platform": {
+#         "transport": "sse",
+#         "url": "https://your-domain.com/mcp/sse",
+#         "headers": { "X-API-Key": "your-cae-api-key" }
+#       }
+#     }
+#   }
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+  cae-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cae-nvh-platform:latest
+    container_name: cae-nvh-api
+    restart: unless-stopped
+
+    # Bind only to localhost — Nginx sits in front and handles external traffic.
+    # Never expose 8000 directly to the internet in production.
+    ports:
+      - "127.0.0.1:${PORT:-8000}:8000"
+
+    # ── Environment variables ─────────────────────────────────────────
+    environment:
+      - LANGCHAIN_TRACING_V2=${LANGCHAIN_TRACING_V2:-false}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY:-}
+      - LANGCHAIN_PROJECT=${LANGCHAIN_PROJECT:-cae-nvh-platform}
+      - LANGCHAIN_ENDPOINT=${LANGCHAIN_ENDPOINT:-https://api.smith.langchain.com}
+      - WANDB_API_KEY=${WANDB_API_KEY:-}
+      - WANDB_PROJECT=${WANDB_PROJECT:-cae-surrogate-models}
+      - WANDB_ENTITY=${WANDB_ENTITY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - CAE_API_KEY=${CAE_API_KEY:-}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    env_file:
+      - .env
+
+    # ── Volumes ───────────────────────────────────────────────────────
+    volumes:
+      - ./data/retriever:/app/data/retriever:ro
+      - ./data/surrogate_model.pkl:/app/data/surrogate_model.pkl:ro
+      - ./data/synthetic:/app/data/synthetic:ro
+      - eval-results:/app/eval
+
+    # ── Health check (used by deploy.sh and AWS ALB) ──────────────────
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout:  10s
+      retries:  3
+      start_period: 60s
+
+    # ── Resource limits — sized for t3.medium (2vCPU / 4GB) ──────────
+    deploy:
+      resources:
+        limits:
+          cpus: "1.8"
+          memory: 3G
+        reservations:
+          cpus: "0.5"
+          memory: 512M
+
+    # ── Logging — JSON format, keep last 50 MB ────────────────────────
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "3"
+
+volumes:
+  eval-results:
+    driver: local

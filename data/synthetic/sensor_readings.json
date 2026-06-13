@@ -1,0 +1,1382 @@
+[
+  {
+    "rpm": 2970,
+    "component": "electric_motor",
+    "dominant_freq_hz": 858.8,
+    "amplitude_db": 79.15,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      858.0,
+      860.0,
+      1718.0
+    ],
+    "peak_amplitudes_db": [
+      62.17,
+      61.84,
+      56.84
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.6014,
+    "signal_quality": "good",
+    "scenario_label": "BPF_resonance_eNVH",
+    "sample_id": "electric_motor_BPF_resonance_eNVH_1"
+  },
+  {
+    "rpm": 2926,
+    "component": "electric_motor",
+    "dominant_freq_hz": 825.4,
+    "amplitude_db": 79.84,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      826.0,
+      824.0,
+      1652.0
+    ],
+    "peak_amplitudes_db": [
+      65.3,
+      54.4,
+      53.9
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.60658,
+    "signal_quality": "good",
+    "scenario_label": "BPF_resonance_eNVH",
+    "sample_id": "electric_motor_BPF_resonance_eNVH_2"
+  },
+  {
+    "rpm": 2922,
+    "component": "electric_motor",
+    "dominant_freq_hz": 862.0,
+    "amplitude_db": 84.35,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      862.0,
+      1724.0,
+      2586.0
+    ],
+    "peak_amplitudes_db": [
+      66.41,
+      57.05,
+      49.37
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.64031,
+    "signal_quality": "good",
+    "scenario_label": "BPF_resonance_eNVH",
+    "sample_id": "electric_motor_BPF_resonance_eNVH_3"
+  },
+  {
+    "rpm": 2923,
+    "component": "electric_motor",
+    "dominant_freq_hz": 854.7,
+    "amplitude_db": 79.19,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      854.0,
+      856.0,
+      1710.0
+    ],
+    "peak_amplitudes_db": [
+      63.29,
+      60.4,
+      56.42
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.60166,
+    "signal_quality": "good",
+    "scenario_label": "BPF_resonance_eNVH",
+    "sample_id": "electric_motor_BPF_resonance_eNVH_4"
+  },
+  {
+    "rpm": 1906,
+    "component": "electric_motor",
+    "dominant_freq_hz": 485.9,
+    "amplitude_db": 78.03,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      486.0,
+      972.0,
+      1458.0
+    ],
+    "peak_amplitudes_db": [
+      65.8,
+      56.71,
+      49.36
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.59289,
+    "signal_quality": "good",
+    "scenario_label": "electromagnetic_whine",
+    "sample_id": "electric_motor_electromagnetic_whine_1"
+  },
+  {
+    "rpm": 2079,
+    "component": "electric_motor",
+    "dominant_freq_hz": 503.1,
+    "amplitude_db": 79.3,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      504.0,
+      502.0,
+      1006.0
+    ],
+    "peak_amplitudes_db": [
+      63.29,
+      60.43,
+      56.45
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.60266,
+    "signal_quality": "good",
+    "scenario_label": "electromagnetic_whine",
+    "sample_id": "electric_motor_electromagnetic_whine_2"
+  },
+  {
+    "rpm": 2050,
+    "component": "electric_motor",
+    "dominant_freq_hz": 502.2,
+    "amplitude_db": 76.32,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      502.0,
+      1004.0,
+      504.0
+    ],
+    "peak_amplitudes_db": [
+      65.19,
+      54.68,
+      51.56
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.58014,
+    "signal_quality": "good",
+    "scenario_label": "electromagnetic_whine",
+    "sample_id": "electric_motor_electromagnetic_whine_3"
+  },
+  {
+    "rpm": 2094,
+    "component": "electric_motor",
+    "dominant_freq_hz": 488.9,
+    "amplitude_db": 80.22,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      490.0,
+      488.0,
+      978.0
+    ],
+    "peak_amplitudes_db": [
+      62.14,
+      62.1,
+      56.97
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.60924,
+    "signal_quality": "good",
+    "scenario_label": "electromagnetic_whine",
+    "sample_id": "electric_motor_electromagnetic_whine_4"
+  },
+  {
+    "rpm": 3987,
+    "component": "electric_motor",
+    "dominant_freq_hz": 1236.7,
+    "amplitude_db": 73.19,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      1236.0,
+      1238.0,
+      2474.0
+    ],
+    "peak_amplitudes_db": [
+      61.78,
+      60.84,
+      56.1
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.55633,
+    "signal_quality": "good",
+    "scenario_label": "high_freq_eNVH",
+    "sample_id": "electric_motor_high_freq_eNVH_1"
+  },
+  {
+    "rpm": 4095,
+    "component": "electric_motor",
+    "dominant_freq_hz": 1173.3,
+    "amplitude_db": 70.29,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      1174.0,
+      2348.0,
+      1172.0
+    ],
+    "peak_amplitudes_db": [
+      64.26,
+      53.06,
+      52.83
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.53514,
+    "signal_quality": "good",
+    "scenario_label": "high_freq_eNVH",
+    "sample_id": "electric_motor_high_freq_eNVH_2"
+  },
+  {
+    "rpm": 3924,
+    "component": "electric_motor",
+    "dominant_freq_hz": 1180.4,
+    "amplitude_db": 69.56,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      1180.0,
+      1182.0,
+      2362.0
+    ],
+    "peak_amplitudes_db": [
+      63.36,
+      56.58,
+      53.63
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.52923,
+    "signal_quality": "good",
+    "scenario_label": "high_freq_eNVH",
+    "sample_id": "electric_motor_high_freq_eNVH_3"
+  },
+  {
+    "rpm": 3967,
+    "component": "electric_motor",
+    "dominant_freq_hz": 1183.1,
+    "amplitude_db": 71.06,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      1184.0,
+      1182.0,
+      2366.0
+    ],
+    "peak_amplitudes_db": [
+      63.24,
+      57.67,
+      54.44
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.54054,
+    "signal_quality": "good",
+    "scenario_label": "high_freq_eNVH",
+    "sample_id": "electric_motor_high_freq_eNVH_4"
+  },
+  {
+    "rpm": 1537,
+    "component": "blower",
+    "dominant_freq_hz": 350.4,
+    "amplitude_db": 71.38,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      350.0,
+      352.0,
+      702.0
+    ],
+    "peak_amplitudes_db": [
+      64.1,
+      54.75,
+      52.2
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.54323,
+    "signal_quality": "good",
+    "scenario_label": "blade_pass_frequency",
+    "sample_id": "blower_blade_pass_frequency_1"
+  },
+  {
+    "rpm": 1420,
+    "component": "blower",
+    "dominant_freq_hz": 327.2,
+    "amplitude_db": 72.53,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      328.0,
+      326.0,
+      654.0
+    ],
+    "peak_amplitudes_db": [
+      63.38,
+      57.89,
+      54.64
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.55149,
+    "signal_quality": "good",
+    "scenario_label": "blade_pass_frequency",
+    "sample_id": "blower_blade_pass_frequency_2"
+  },
+  {
+    "rpm": 1558,
+    "component": "blower",
+    "dominant_freq_hz": 341.8,
+    "amplitude_db": 71.98,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      342.0,
+      684.0,
+      1026.0
+    ],
+    "peak_amplitudes_db": [
+      65.0,
+      55.64,
+      47.8
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.54664,
+    "signal_quality": "good",
+    "scenario_label": "blade_pass_frequency",
+    "sample_id": "blower_blade_pass_frequency_3"
+  },
+  {
+    "rpm": 1449,
+    "component": "blower",
+    "dominant_freq_hz": 353.1,
+    "amplitude_db": 69.17,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      354.0,
+      352.0,
+      706.0
+    ],
+    "peak_amplitudes_db": [
+      62.2,
+      59.11,
+      55.15
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.52568,
+    "signal_quality": "good",
+    "scenario_label": "blade_pass_frequency",
+    "sample_id": "blower_blade_pass_frequency_4"
+  },
+  {
+    "rpm": 2958,
+    "component": "blower",
+    "dominant_freq_hz": 693.9,
+    "amplitude_db": 72.27,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      694.0,
+      1388.0,
+      2082.0
+    ],
+    "peak_amplitudes_db": [
+      65.14,
+      56.01,
+      48.66
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.55012,
+    "signal_quality": "good",
+    "scenario_label": "BPF_second_harmonic",
+    "sample_id": "blower_BPF_second_harmonic_1"
+  },
+  {
+    "rpm": 2959,
+    "component": "blower",
+    "dominant_freq_hz": 698.6,
+    "amplitude_db": 77.91,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      698.0,
+      700.0,
+      1398.0
+    ],
+    "peak_amplitudes_db": [
+      63.94,
+      58.69,
+      55.37
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.59221,
+    "signal_quality": "good",
+    "scenario_label": "BPF_second_harmonic",
+    "sample_id": "blower_BPF_second_harmonic_2"
+  },
+  {
+    "rpm": 3016,
+    "component": "blower",
+    "dominant_freq_hz": 704.9,
+    "amplitude_db": 74.28,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      706.0,
+      704.0,
+      1410.0
+    ],
+    "peak_amplitudes_db": [
+      61.97,
+      60.93,
+      56.22
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.56512,
+    "signal_quality": "good",
+    "scenario_label": "BPF_second_harmonic",
+    "sample_id": "blower_BPF_second_harmonic_3"
+  },
+  {
+    "rpm": 2994,
+    "component": "blower",
+    "dominant_freq_hz": 689.2,
+    "amplitude_db": 74.19,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      690.0,
+      688.0,
+      1378.0
+    ],
+    "peak_amplitudes_db": [
+      63.88,
+      57.27,
+      54.28
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.56462,
+    "signal_quality": "good",
+    "scenario_label": "BPF_second_harmonic",
+    "sample_id": "blower_BPF_second_harmonic_4"
+  },
+  {
+    "rpm": 1079,
+    "component": "sheet_metal",
+    "dominant_freq_hz": 118.3,
+    "amplitude_db": 66.02,
+    "freq_range": "low",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      118.0,
+      236.0,
+      120.0
+    ],
+    "peak_amplitudes_db": [
+      64.07,
+      53.98,
+      48.4
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.50267,
+    "signal_quality": "good",
+    "scenario_label": "panel_resonance",
+    "sample_id": "sheet_metal_panel_resonance_1"
+  },
+  {
+    "rpm": 1055,
+    "component": "sheet_metal",
+    "dominant_freq_hz": 125.2,
+    "amplitude_db": 65.89,
+    "freq_range": "low",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      126.0,
+      124.0,
+      250.0
+    ],
+    "peak_amplitudes_db": [
+      62.29,
+      57.61,
+      54.18
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.50063,
+    "signal_quality": "good",
+    "scenario_label": "panel_resonance",
+    "sample_id": "sheet_metal_panel_resonance_2"
+  },
+  {
+    "rpm": 962,
+    "component": "sheet_metal",
+    "dominant_freq_hz": 121.6,
+    "amplitude_db": 65.2,
+    "freq_range": "low",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      122.0,
+      244.0,
+      120.0
+    ],
+    "peak_amplitudes_db": [
+      63.78,
+      53.23,
+      50.51
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.49552,
+    "signal_quality": "good",
+    "scenario_label": "panel_resonance",
+    "sample_id": "sheet_metal_panel_resonance_3"
+  },
+  {
+    "rpm": 1063,
+    "component": "sheet_metal",
+    "dominant_freq_hz": 116.0,
+    "amplitude_db": 64.28,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      116.0,
+      232.0,
+      348.0
+    ],
+    "peak_amplitudes_db": [
+      64.12,
+      55.03,
+      47.57
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.48911,
+    "signal_quality": "good",
+    "scenario_label": "panel_resonance",
+    "sample_id": "sheet_metal_panel_resonance_4"
+  },
+  {
+    "rpm": 783,
+    "component": "sheet_metal",
+    "dominant_freq_hz": 86.6,
+    "amplitude_db": 58.32,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      86.0,
+      88.0,
+      174.0
+    ],
+    "peak_amplitudes_db": [
+      61.89,
+      54.83,
+      51.88
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.44457,
+    "signal_quality": "good",
+    "scenario_label": "low_freq_structural",
+    "sample_id": "sheet_metal_low_freq_structural_1"
+  },
+  {
+    "rpm": 758,
+    "component": "sheet_metal",
+    "dominant_freq_hz": 87.9,
+    "amplitude_db": 61.66,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      88.0,
+      176.0,
+      264.0
+    ],
+    "peak_amplitudes_db": [
+      63.73,
+      54.61,
+      47.09
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.4687,
+    "signal_quality": "good",
+    "scenario_label": "low_freq_structural",
+    "sample_id": "sheet_metal_low_freq_structural_2"
+  },
+  {
+    "rpm": 802,
+    "component": "sheet_metal",
+    "dominant_freq_hz": 87.7,
+    "amplitude_db": 61.83,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      88.0,
+      176.0,
+      86.0
+    ],
+    "peak_amplitudes_db": [
+      63.55,
+      53.74,
+      46.61
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.46964,
+    "signal_quality": "good",
+    "scenario_label": "low_freq_structural",
+    "sample_id": "sheet_metal_low_freq_structural_3"
+  },
+  {
+    "rpm": 845,
+    "component": "sheet_metal",
+    "dominant_freq_hz": 83.0,
+    "amplitude_db": 58.27,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      84.0,
+      82.0,
+      166.0
+    ],
+    "peak_amplitudes_db": [
+      59.64,
+      59.06,
+      54.08
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.44419,
+    "signal_quality": "good",
+    "scenario_label": "low_freq_structural",
+    "sample_id": "sheet_metal_low_freq_structural_4"
+  },
+  {
+    "rpm": 1867,
+    "component": "chassis",
+    "dominant_freq_hz": 217.9,
+    "amplitude_db": 66.89,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      218.0,
+      436.0,
+      654.0
+    ],
+    "peak_amplitudes_db": [
+      64.46,
+      55.27,
+      48.04
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.50887,
+    "signal_quality": "good",
+    "scenario_label": "structural_resonance",
+    "sample_id": "chassis_structural_resonance_1"
+  },
+  {
+    "rpm": 1864,
+    "component": "chassis",
+    "dominant_freq_hz": 210.0,
+    "amplitude_db": 70.31,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      210.0,
+      420.0,
+      630.0
+    ],
+    "peak_amplitudes_db": [
+      64.89,
+      55.77,
+      48.4
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.53383,
+    "signal_quality": "good",
+    "scenario_label": "structural_resonance",
+    "sample_id": "chassis_structural_resonance_2"
+  },
+  {
+    "rpm": 1763,
+    "component": "chassis",
+    "dominant_freq_hz": 209.1,
+    "amplitude_db": 66.59,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      210.0,
+      208.0,
+      418.0
+    ],
+    "peak_amplitudes_db": [
+      61.84,
+      58.75,
+      54.88
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.50587,
+    "signal_quality": "good",
+    "scenario_label": "structural_resonance",
+    "sample_id": "chassis_structural_resonance_3"
+  },
+  {
+    "rpm": 1891,
+    "component": "chassis",
+    "dominant_freq_hz": 215.1,
+    "amplitude_db": 68.23,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      216.0,
+      214.0,
+      430.0
+    ],
+    "peak_amplitudes_db": [
+      62.13,
+      58.89,
+      54.95
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.51897,
+    "signal_quality": "good",
+    "scenario_label": "structural_resonance",
+    "sample_id": "chassis_structural_resonance_4"
+  },
+  {
+    "rpm": 602,
+    "component": "chassis",
+    "dominant_freq_hz": 55.5,
+    "amplitude_db": 60.39,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      56.0,
+      54.0,
+      110.0
+    ],
+    "peak_amplitudes_db": [
+      62.5,
+      53.71,
+      50.85
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.45738,
+    "signal_quality": "good",
+    "scenario_label": "body_bending_mode",
+    "sample_id": "chassis_body_bending_mode_1"
+  },
+  {
+    "rpm": 535,
+    "component": "chassis",
+    "dominant_freq_hz": 54.2,
+    "amplitude_db": 60.98,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      54.0,
+      108.0,
+      56.0
+    ],
+    "peak_amplitudes_db": [
+      63.46,
+      53.53,
+      46.59
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.46489,
+    "signal_quality": "good",
+    "scenario_label": "body_bending_mode",
+    "sample_id": "chassis_body_bending_mode_2"
+  },
+  {
+    "rpm": 512,
+    "component": "chassis",
+    "dominant_freq_hz": 55.1,
+    "amplitude_db": 55.55,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      56.0,
+      54.0,
+      110.0
+    ],
+    "peak_amplitudes_db": [
+      59.34,
+      58.45,
+      53.67
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.42256,
+    "signal_quality": "good",
+    "scenario_label": "body_bending_mode",
+    "sample_id": "chassis_body_bending_mode_3"
+  },
+  {
+    "rpm": 540,
+    "component": "chassis",
+    "dominant_freq_hz": 57.0,
+    "amplitude_db": 55.92,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      56.0,
+      58.0,
+      114.0
+    ],
+    "peak_amplitudes_db": [
+      59.1,
+      58.82,
+      53.72
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.42439,
+    "signal_quality": "good",
+    "scenario_label": "body_bending_mode",
+    "sample_id": "chassis_body_bending_mode_4"
+  },
+  {
+    "rpm": 2716,
+    "component": "gearbox",
+    "dominant_freq_hz": 432.3,
+    "amplitude_db": 79.53,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      432.0,
+      864.0,
+      434.0
+    ],
+    "peak_amplitudes_db": [
+      65.5,
+      54.99,
+      52.04
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.60251,
+    "signal_quality": "good",
+    "scenario_label": "gear_mesh_frequency",
+    "sample_id": "gearbox_gear_mesh_frequency_1"
+  },
+  {
+    "rpm": 2819,
+    "component": "gearbox",
+    "dominant_freq_hz": 415.2,
+    "amplitude_db": 80.58,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      416.0,
+      414.0,
+      830.0
+    ],
+    "peak_amplitudes_db": [
+      63.9,
+      59.62,
+      56.06
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.61054,
+    "signal_quality": "good",
+    "scenario_label": "gear_mesh_frequency",
+    "sample_id": "gearbox_gear_mesh_frequency_2"
+  },
+  {
+    "rpm": 2702,
+    "component": "gearbox",
+    "dominant_freq_hz": 421.2,
+    "amplitude_db": 82.83,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      422.0,
+      420.0,
+      842.0
+    ],
+    "peak_amplitudes_db": [
+      64.54,
+      59.03,
+      55.79
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.62912,
+    "signal_quality": "good",
+    "scenario_label": "gear_mesh_frequency",
+    "sample_id": "gearbox_gear_mesh_frequency_3"
+  },
+  {
+    "rpm": 2837,
+    "component": "gearbox",
+    "dominant_freq_hz": 427.6,
+    "amplitude_db": 77.69,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      428.0,
+      856.0,
+      426.0
+    ],
+    "peak_amplitudes_db": [
+      65.34,
+      54.88,
+      51.68
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.58956,
+    "signal_quality": "good",
+    "scenario_label": "gear_mesh_frequency",
+    "sample_id": "gearbox_gear_mesh_frequency_4"
+  },
+  {
+    "rpm": 2787,
+    "component": "gearbox",
+    "dominant_freq_hz": 861.1,
+    "amplitude_db": 75.61,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      862.0,
+      860.0,
+      1722.0
+    ],
+    "peak_amplitudes_db": [
+      63.38,
+      59.04,
+      55.53
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.57358,
+    "signal_quality": "good",
+    "scenario_label": "GMF_second_harmonic",
+    "sample_id": "gearbox_GMF_second_harmonic_1"
+  },
+  {
+    "rpm": 2816,
+    "component": "gearbox",
+    "dominant_freq_hz": 807.4,
+    "amplitude_db": 73.61,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      808.0,
+      806.0,
+      1616.0
+    ],
+    "peak_amplitudes_db": [
+      64.51,
+      54.25,
+      52.78
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.5594,
+    "signal_quality": "good",
+    "scenario_label": "GMF_second_harmonic",
+    "sample_id": "gearbox_GMF_second_harmonic_2"
+  },
+  {
+    "rpm": 2884,
+    "component": "gearbox",
+    "dominant_freq_hz": 798.3,
+    "amplitude_db": 75.33,
+    "freq_range": "mid",
+    "severity": 4,
+    "peak_frequencies_hz": [
+      798.0,
+      800.0,
+      1596.0
+    ],
+    "peak_amplitudes_db": [
+      64.85,
+      53.63,
+      53.5
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.57365,
+    "signal_quality": "good",
+    "scenario_label": "GMF_second_harmonic",
+    "sample_id": "gearbox_GMF_second_harmonic_3"
+  },
+  {
+    "rpm": 2745,
+    "component": "gearbox",
+    "dominant_freq_hz": 820.1,
+    "amplitude_db": 74.0,
+    "freq_range": "mid",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      820.0,
+      1640.0,
+      822.0
+    ],
+    "peak_amplitudes_db": [
+      65.05,
+      54.93,
+      49.51
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.56222,
+    "signal_quality": "good",
+    "scenario_label": "GMF_second_harmonic",
+    "sample_id": "gearbox_GMF_second_harmonic_4"
+  },
+  {
+    "rpm": 3660,
+    "component": "bearing",
+    "dominant_freq_hz": 2401.8,
+    "amplitude_db": 66.64,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      2402.0,
+      4804.0,
+      2404.0
+    ],
+    "peak_amplitudes_db": [
+      64.04,
+      53.76,
+      49.74
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.50579,
+    "signal_quality": "good",
+    "scenario_label": "BPFI_defect",
+    "sample_id": "bearing_BPFI_defect_1"
+  },
+  {
+    "rpm": 3655,
+    "component": "bearing",
+    "dominant_freq_hz": 2351.6,
+    "amplitude_db": 69.83,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      2352.0,
+      4704.0,
+      2944.0
+    ],
+    "peak_amplitudes_db": [
+      64.81,
+      55.64,
+      48.01
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.53135,
+    "signal_quality": "good",
+    "scenario_label": "BPFI_defect",
+    "sample_id": "bearing_BPFI_defect_2"
+  },
+  {
+    "rpm": 3541,
+    "component": "bearing",
+    "dominant_freq_hz": 2327.7,
+    "amplitude_db": 68.24,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      2328.0,
+      4656.0,
+      3016.0
+    ],
+    "peak_amplitudes_db": [
+      64.48,
+      54.92,
+      46.8
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.5184,
+    "signal_quality": "good",
+    "scenario_label": "BPFI_defect",
+    "sample_id": "bearing_BPFI_defect_3"
+  },
+  {
+    "rpm": 3635,
+    "component": "bearing",
+    "dominant_freq_hz": 2409.5,
+    "amplitude_db": 70.67,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      2410.0,
+      4820.0,
+      2770.0
+    ],
+    "peak_amplitudes_db": [
+      64.91,
+      55.75,
+      48.31
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.53623,
+    "signal_quality": "good",
+    "scenario_label": "BPFI_defect",
+    "sample_id": "bearing_BPFI_defect_4"
+  },
+  {
+    "rpm": 3625,
+    "component": "bearing",
+    "dominant_freq_hz": 1875.3,
+    "amplitude_db": 66.59,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      1876.0,
+      3752.0,
+      1874.0
+    ],
+    "peak_amplitudes_db": [
+      64.11,
+      53.95,
+      48.77
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.50515,
+    "signal_quality": "good",
+    "scenario_label": "BPFO_defect",
+    "sample_id": "bearing_BPFO_defect_1"
+  },
+  {
+    "rpm": 3578,
+    "component": "bearing",
+    "dominant_freq_hz": 1713.5,
+    "amplitude_db": 68.57,
+    "freq_range": "high",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      1714.0,
+      3428.0,
+      4858.0
+    ],
+    "peak_amplitudes_db": [
+      64.61,
+      55.17,
+      47.58
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.52137,
+    "signal_quality": "good",
+    "scenario_label": "BPFO_defect",
+    "sample_id": "bearing_BPFO_defect_2"
+  },
+  {
+    "rpm": 3645,
+    "component": "bearing",
+    "dominant_freq_hz": 1753.1,
+    "amplitude_db": 64.45,
+    "freq_range": "high",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      1754.0,
+      1752.0,
+      3506.0
+    ],
+    "peak_amplitudes_db": [
+      63.06,
+      54.61,
+      51.82
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.49129,
+    "signal_quality": "good",
+    "scenario_label": "BPFO_defect",
+    "sample_id": "bearing_BPFO_defect_3"
+  },
+  {
+    "rpm": 3624,
+    "component": "bearing",
+    "dominant_freq_hz": 1880.5,
+    "amplitude_db": 63.51,
+    "freq_range": "high",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      1880.0,
+      1882.0,
+      3762.0
+    ],
+    "peak_amplitudes_db": [
+      61.42,
+      58.37,
+      54.51
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.48319,
+    "signal_quality": "good",
+    "scenario_label": "BPFO_defect",
+    "sample_id": "bearing_BPFO_defect_4"
+  },
+  {
+    "rpm": 1236,
+    "component": "exhaust",
+    "dominant_freq_hz": 98.0,
+    "amplitude_db": 64.87,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      98.0,
+      196.0,
+      294.0
+    ],
+    "peak_amplitudes_db": [
+      64.2,
+      55.03,
+      47.78
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.49308,
+    "signal_quality": "good",
+    "scenario_label": "exhaust_resonance",
+    "sample_id": "exhaust_exhaust_resonance_1"
+  },
+  {
+    "rpm": 1221,
+    "component": "exhaust",
+    "dominant_freq_hz": 97.5,
+    "amplitude_db": 59.77,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      98.0,
+      96.0,
+      196.0
+    ],
+    "peak_amplitudes_db": [
+      62.74,
+      52.16,
+      51.16
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.45545,
+    "signal_quality": "good",
+    "scenario_label": "exhaust_resonance",
+    "sample_id": "exhaust_exhaust_resonance_2"
+  },
+  {
+    "rpm": 1235,
+    "component": "exhaust",
+    "dominant_freq_hz": 99.2,
+    "amplitude_db": 59.99,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      100.0,
+      98.0,
+      198.0
+    ],
+    "peak_amplitudes_db": [
+      61.44,
+      56.87,
+      53.3
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.45585,
+    "signal_quality": "good",
+    "scenario_label": "exhaust_resonance",
+    "sample_id": "exhaust_exhaust_resonance_3"
+  },
+  {
+    "rpm": 1154,
+    "component": "exhaust",
+    "dominant_freq_hz": 98.5,
+    "amplitude_db": 61.54,
+    "freq_range": "low",
+    "severity": 2,
+    "peak_frequencies_hz": [
+      98.0,
+      100.0,
+      198.0
+    ],
+    "peak_amplitudes_db": [
+      62.64,
+      54.25,
+      51.73
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.46966,
+    "signal_quality": "good",
+    "scenario_label": "exhaust_resonance",
+    "sample_id": "exhaust_exhaust_resonance_4"
+  },
+  {
+    "rpm": 2476,
+    "component": "mount",
+    "dominant_freq_hz": 187.7,
+    "amplitude_db": 72.53,
+    "freq_range": "low",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      188.0,
+      376.0,
+      186.0
+    ],
+    "peak_amplitudes_db": [
+      64.97,
+      55.28,
+      47.82
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.5525,
+    "signal_quality": "good",
+    "scenario_label": "mount_isolation_failure",
+    "sample_id": "mount_mount_isolation_failure_1"
+  },
+  {
+    "rpm": 2471,
+    "component": "mount",
+    "dominant_freq_hz": 174.6,
+    "amplitude_db": 69.87,
+    "freq_range": "low",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      174.0,
+      176.0,
+      350.0
+    ],
+    "peak_amplitudes_db": [
+      63.27,
+      56.96,
+      53.93
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.53142,
+    "signal_quality": "good",
+    "scenario_label": "mount_isolation_failure",
+    "sample_id": "mount_mount_isolation_failure_2"
+  },
+  {
+    "rpm": 2432,
+    "component": "mount",
+    "dominant_freq_hz": 182.7,
+    "amplitude_db": 70.63,
+    "freq_range": "low",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      182.0,
+      184.0,
+      366.0
+    ],
+    "peak_amplitudes_db": [
+      62.93,
+      58.16,
+      54.82
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.53707,
+    "signal_quality": "good",
+    "scenario_label": "mount_isolation_failure",
+    "sample_id": "mount_mount_isolation_failure_3"
+  },
+  {
+    "rpm": 2316,
+    "component": "mount",
+    "dominant_freq_hz": 179.1,
+    "amplitude_db": 69.49,
+    "freq_range": "low",
+    "severity": 3,
+    "peak_frequencies_hz": [
+      180.0,
+      178.0,
+      358.0
+    ],
+    "peak_amplitudes_db": [
+      62.08,
+      59.33,
+      55.25
+    ],
+    "harmonic_ratio": 0.35,
+    "signal_rms": 0.5269,
+    "signal_quality": "good",
+    "scenario_label": "mount_isolation_failure",
+    "sample_id": "mount_mount_isolation_failure_4"
+  }
+]

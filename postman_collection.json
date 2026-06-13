@@ -1,0 +1,137 @@
+{
+  "info": {
+    "name": "CAE NVH Multi-Agent API",
+    "description": "Postman collection for running the Step 4 FastAPI endpoints locally.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Invoke Agent",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/invoke",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "invoke"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"Predict NVH level for motor at 3000 rpm with 80 Nm load\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Predict NVH",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/predict",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "predict"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"rpm\": 3000,\n  \"load_nm\": 80.0,\n  \"temperature_c\": 60.0,\n  \"stator_slots\": 36,\n  \"rotor_poles\": 6,\n  \"air_gap_mm\": 0.8\n}"
+        }
+      }
+    },
+    {
+      "name": "Diagnose Sensor",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/diagnose",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "diagnose"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"dominant_freq_hz\": 847.0,\n  \"amplitude_db\": 82.0,\n  \"component\": \"electric_motor\",\n  \"rpm\": 3000,\n  \"freq_range\": \"high\"\n}"
+        }
+      }
+    },
+    {
+      "name": "List Cases",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}/cases?component=electric_motor&severity_min=3",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "cases"
+          ],
+          "query": [
+            {
+              "key": "component",
+              "value": "electric_motor"
+            },
+            {
+              "key": "severity_min",
+              "value": "3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "MCP Schema",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}/mcp",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "mcp"
+          ]
+        }
+      }
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "exec": [
+          "if (!pm.environment.get('base_url')) {",
+          "    pm.environment.set('base_url', 'http://127.0.0.1:8001');",
+          "}"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ]
+}

@@ -12,12 +12,12 @@ What this file adds on top of the LangGraph graph:
   • GET  /health        — uptime + system status check
   • GET  /cases         — browse the NVH knowledge base
   • GET  /docs          — auto-generated Swagger UI (FastAPI built-in)
-  • /mcp                — MCP server (BMW TechWorks requirement)
+  • /mcp                — MCP server for inter-agent communication
 
 What is MCP?
 ─────────────
   Model Context Protocol (MCP) is a standard for exposing AI tools
-  to other AI agents. When BMW's engineering assistant wants to call
+  to other AI agents. When an engineering assistant wants to call
   your NVH diagnosis tool, it calls /mcp instead of building a custom
   integration. One standard protocol — any AI can call any MCP server.
 
@@ -48,6 +48,7 @@ except ImportError:
     pass
 
 from fastapi import FastAPI, HTTPException, Security, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import APIKeyHeader
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
@@ -104,6 +105,16 @@ app = FastAPI(
     version     = "1.0.0",
     docs_url    = "/docs",
     redoc_url   = "/redoc",
+)
+
+# ── CORS — allow browser clients and remote MCP consumers ────────────────────
+_cors_origins = os.getenv("CORS_ORIGINS", "*").split(",")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins     = _cors_origins,
+    allow_credentials = True,
+    allow_methods     = ["*"],
+    allow_headers     = ["*"],
 )
 
 # ── Startup: load heavy objects once ─────────────────────────────────────────
@@ -250,7 +261,7 @@ async def invoke_agent(request: InvokeRequest, _: str = _AUTH):
     - Standards/compliance     → Compliance Agent (ISO/IEC knowledge)
     - Sensor-based diagnosis   → Sensor Agent (RAG + structured parsing)
 
-    This is the primary endpoint that BMW TechWorks would call.
+    This is the primary endpoint that engineering clients would call.
     """
     t0 = time.time()
 
@@ -293,7 +304,7 @@ async def diagnose_sensor(request: SensorRequest, _: str = _AUTH):
     Input: frequency, amplitude, component type.
     Output: diagnosis, root cause, recommended action.
 
-    BMW TechWorks use case: their engineering assistant calls this
+    Use case: an engineering assistant calls this
     endpoint when a vehicle sensor detects abnormal vibration.
     """
     t0 = time.time()

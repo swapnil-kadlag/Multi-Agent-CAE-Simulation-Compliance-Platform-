@@ -50,15 +50,15 @@ open http://localhost:8000/docs
 
 ## MCP Server
 
-The /mcp endpoint exposes your tools to other AI agents (BMW TechWorks requirement).
+The /mcp endpoint exposes your tools to other AI agents via the Model Context Protocol.
 For full MCP protocol: pip install fastapi-mcp
 
 ## Interview Question
 
-"What is MCP and why does BMW TechWorks require it?"
+"What is MCP and why does this platform use it?"
 
 Answer: Model Context Protocol is a standard for exposing AI tools to
 other AI agents. Like REST is for humans calling APIs, MCP is for AI
-agents calling other AI agents' tools. When BMW's engineering assistant
+agents calling other AI agents' tools. When an engineering assistant
 needs NVH diagnosis, it calls /mcp instead of a custom integration.
 One standard — any AI agent can discover and call any MCP server.

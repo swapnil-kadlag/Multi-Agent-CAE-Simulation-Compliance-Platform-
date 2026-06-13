@@ -66,15 +66,18 @@ services:
       retries:  3
       start_period: 60s
 
-    # ── Resource limits — sized for t3.medium (2vCPU / 4GB) ──────────
+    # ── Resource limits — sized for t2.micro (1vCPU / 1GB, Free Tier) ──
+    # OS + Nginx use ~150 MB, leaving ~850 MB for the app container.
+    # Runtime usage: ~600-700 MB (FAISS + models + FastAPI + LangGraph).
+    # For larger instances (t3.medium+), raise memory limit to 3G.
     deploy:
       resources:
         limits:
-          cpus: "1.8"
-          memory: 3G
+          cpus: "0.9"
+          memory: 850M
         reservations:
-          cpus: "0.5"
-          memory: 512M
+          cpus: "0.25"
+          memory: 256M
 
     # ── Logging — JSON format, keep last 50 MB ────────────────────────
     logging:

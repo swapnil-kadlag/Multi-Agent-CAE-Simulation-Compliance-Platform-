@@ -4,12 +4,15 @@
 # One-time bootstrap script for a fresh AWS EC2 instance.
 # Tested on: Ubuntu 22.04 LTS (ami-0c7217cdde317cfec in us-east-1)
 #
-# Recommended instance:  t3.medium (2 vCPU, 4 GB RAM) — handles FAISS + model
-# Storage:               20 GB gp3 EBS
-# Security Group ports:  22 (SSH), 80 (HTTP), 443 (HTTPS)
+# Instance:   t2.micro (1 vCPU, 1 GB RAM) — AWS Free Tier eligible
+# Storage:    20 GB gp3 EBS
+# Ports:      22 (SSH your IP only), 80 (HTTP), 443 (HTTPS)
+#
+# NOTE: t2.micro has only 1 GB RAM. This script adds a 2 GB swap file so
+# Docker image builds (pip install of heavy ML packages) don't OOM-kill.
+# At runtime the app uses ~600-700 MB and fits comfortably in 1 GB.
 #
 # Run ONCE after launching your EC2 instance:
-#   chmod +x deploy/setup_ec2.sh
 #   scp -i your-key.pem deploy/setup_ec2.sh ubuntu@<EC2-IP>:~/
 #   ssh -i your-key.pem ubuntu@<EC2-IP>
 #   bash setup_ec2.sh
@@ -18,8 +21,25 @@
 set -euo pipefail   # exit on any error, undefined var, or pipe failure
 
 echo "================================================================"
-echo "  CAE NVH Platform — EC2 Bootstrap"
+echo "  CAE NVH Platform — EC2 Bootstrap (Free Tier / t2.micro)"
 echo "================================================================"
+
+# ── 0. Swap file — CRITICAL for t2.micro ─────────────────────────────────────
+# Docker's pip install of faiss-cpu + langchain + scikit-learn needs ~1.5 GB
+# temporarily. Without swap the OOM killer terminates the build mid-way.
+# 2 GB swap on gp3 SSD is fast enough; it's only hit during build, not runtime.
+echo ""
+echo "[0/7] Creating 2 GB swap file (required for Docker build on 1 GB RAM)..."
+if [[ ! -f /swapfile ]]; then
+  sudo fallocate -l 2G /swapfile
+  sudo chmod 600 /swapfile
+  sudo mkswap /swapfile
+  sudo swapon /swapfile
+  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+  echo "   Swap enabled: $(free -h | grep Swap)"
+else
+  echo "   Swap already exists — skipping"
+fi
 
 # ── 1. System update ─────────────────────────────────────────────────────────
 echo ""
